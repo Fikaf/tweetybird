@@ -1,0 +1,7 @@
+<h3>User search history</h3>
+
+<% if @history.present? %>
+  <% @history.reverse.each do |hist| %>
+    <%=hist.search_term%><br/>
+  <%end%>
+<%end%>

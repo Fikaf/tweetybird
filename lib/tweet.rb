@@ -10,9 +10,7 @@ module Tweet
     end
 
     def search(keywords, latitude, longitude)
-      client.search(keywords, result_type: "recent").take(3).each do |tweet|
-        puts tweet.text
-      end
+      client.search(keywords, result_type: "recent").take(10)
     end
 
     def users(keywords)
