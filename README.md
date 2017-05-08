@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Below is a guide to get this app up and running on your local machine.
 
-Things you may want to cover:
+- You will also require postgresql with the role "tweety" with password "password" 
 
-* Ruby version
+- You will need to get Ruby (I have used Ruby 2.4.1). There is a .ruby_version included in the repository which can be used by rbenv (a ruby version manager)
 
-* System dependencies
+- After this, you will need bundler. <b>gem install bundler</b>
 
-* Configuration
+- After you have cloned the repository, run <b>bundle install</b> inside the project root folder
 
-* Database creation
+- You will now be able to run the migrations and create the tables the app needs. <b>rake db:migrate</b>
 
-* Database initialization
+- You can now run the server. <b>rails s</b>
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Create a new user and search using twitters api! You will also be able to use the history tab to look at what you have already searched for.
