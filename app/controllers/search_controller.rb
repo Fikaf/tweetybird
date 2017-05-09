@@ -4,7 +4,7 @@ class SearchController < ApplicationController
   def main
     @search_active = true
     if params[:keyword].present?
-      results = Tweet.search(params[:keyword],0,0)
+      results = Tweet.search(params[:keyword], 0, 0)
       History.create(user: current_user, search_term: params[:keyword])
       @stuff = results
     end
